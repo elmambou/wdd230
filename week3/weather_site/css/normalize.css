@@ -39,6 +39,9 @@ section {
   display: block;
 }
 
+.scenarios-heading {list-style-type: none; font-weight: bold;}
+    .scenarios-text { margin-left: 31px;}
+
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -89,7 +92,7 @@ hr {
 
 pre {
   font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-size: 10em; /* 2 */
 }
 
 /* Text-level semantics
