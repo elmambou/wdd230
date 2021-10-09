@@ -1,98 +1,74 @@
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="John Doe">
 
-/*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+<!-- This start file was build by Paul Cheney  -->
+<title>Weather Services: Meteo du Peuple</title>
 
-html {line-height: 1.30;}
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-nav button {
-    margin: .2rem 2%;
-    background-color: transparent;
-    border: none;
-    font-size: 1.6rem;
-    color:yellowgreen;
-}   
-nav {
-    background-color: #aa0000;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-nav ul li a {
-    display: block;
-    padding: .8rem 2%;
-    text-decoration: none;
-    color: rgba(255,255,2555,0.8);
-    border-top: 1px solid rgba(0,0,0,0.3);
-}
-nav ul li.active a{background-color: rgba(0,0,0,0.2); color: #fff;}
-nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
 
-nav ul.hide {display: none;}
-/*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  img.icon {
-    float: left;
-    width: 90px;
-    margin: 0;
-  
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header class="clearfix">
+        <div class="navWrapper">
+            <img class ="icon" src ="images/cm.png" alt="Preston Weather">
+            <h1>Jozzy Meteo du Peuple</h1>
+            <h2>With Us You Can Go Anywhere</h2>
+        </div>
+    
+    </header>
+        
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <div class="navWrapper">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="#">&#9996; Home</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#"> Fish Haven</a></li>
+                <li><a href="#">&#9742; Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+               
+            </ul>
+        </div>
+    </nav>
+       
+<!-- CONTENT HERE -->
+    <main>
+        <h1>Preston, Idaho</h1>
+        <article>
+        <section> <h3>Curent Weather</h3></section>
+            <section><h3>10 Day Forecast </h3> </section>
+            <section><h3> Weather News </h3></section>
+            <section><h3> Contact Information </h3></section>
+        </article>
+
+    </main>
+    
+<!-- FOOTER HERE -->   
+ <footer>
  
-}
-  h1 {
-    line-height: 10px;
-    font-weight: 200;
-    padding: 15px 0px 20px 0px; 
-    margin: 10px;
-    color:blue;
+   &copy; Jozzy Meteo du Peuple &bull; <b>Elie Silvere Mambou</b> &bull; <span id="copyrightyear"></span> | South Africa
 
-    }
-
-    main section    {
-        padding: .3rem 2%;
-        min-height: .5rem;
-    }
-
-    article section h3 {
-        background-color: #eee;
-        color: black;}
-        
-    footer {
-       padding: 1rem 2%;
-       text-align: center;
-       font-size: 18px;
-       background-color: mediumseagreen;
-       }
-
-
-    h2 {
-        margin: 20px;
-        text-shadow: 2px 2px 4px #888;
-        padding: 0px;
-    } 
-
-
-    h3 {
-        padding: 5px;
-        margin: 10px;
-       }
-
-    /* -------------HEADER ---------------*/
-    header {
-        padding: 1rem 2%;
-        min-height: 10rem;
-        
-        
-    }
-
-    h3 {
-        color: green;
-    }
+</footer>
+    
+<script src="js/scripts.js"></script>
+</body>
+</html>
