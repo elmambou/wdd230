@@ -1,6 +1,10 @@
 /* 64em is also 1028px when basefont is 16px */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 1141px) {
    /* nav ul li a { padding: .6rem 1rem } */
+    header, nav, main, footer { 
+        max-width: 1024px;
+        margin: 0 auto;
+    }
 
     nav {
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2825b+0,e55b2b+50,f07146+100;Red+3D+%232 */
@@ -38,16 +42,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2825b', end
     .navWrapper {
         align-content: left;
         margin: 0 auto;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     
     header h1 {
         font-size: 2.8rem;
     }
+
+    h2 {
+        margin: 20px;
+        text-shadow: 2px 2px 4px #888;
+        padding: 0px;
+        font-size: 1.8rem ;
+    } 
+   
     header h3 {
         font-size: 1.1rem;
     }
  
 
 } /*end large */
-
