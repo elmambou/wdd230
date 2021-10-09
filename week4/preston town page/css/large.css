@@ -1,74 +1,64 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="description" content="Fill Me In">
-<meta name="author" content="John Doe">
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 1141px) {
+   /* nav ul li a { padding: .6rem 1rem } */
+    header, nav, main, footer { 
+        max-width: 1024px;
+        margin: 0 auto;
+    }
 
-<!-- This start file was build by Paul Cheney  -->
-<title>Weather Services: Meteo du Peuple</title>
+    nav {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2825b+0,e55b2b+50,f07146+100;Red+3D+%232 */
+background: #f2825b; /* Old browsers */
+background: -moz-linear-gradient(top,  #f2825b 0%, #e55b2b 50%, #f07146 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f2825b 0%,#e55b2b 50%,#f07146 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f2825b 0%,#e55b2b 50%,#f07146 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2825b', endColorstr='#f07146',GradientType=0 ); /* IE6-9 */
 
-<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    }
 
-<!-- STYLE SHEETS -->
-<link href="css/normalize.css" rel="stylesheet">
-<!-- phone-default -->
-<link href="css/small.css" rel="stylesheet">
-<!-- enhance-tablet -->
-<link href="css/medium.css" rel="stylesheet">
-<!-- enhance-desktop -->
-<link href="css/large.css" rel="stylesheet">
+    img.icon {
+        padding-left: 10px;
+        width: 120px;
+    }
 
 
-     
-</head>
-<body>
-<!-- HEADER HERE -->
-	<header class="clearfix">
-        <div class="navWrapper">
-            <img class ="icon" src ="images/cm.png" alt="Preston Weather">
-            <h1>Jozzy Meteo du Peuple</h1>
-            <h2>With Us You Can Go Anywhere</h2>
-        </div>
+    nav button { display: none;}
     
-    </header>
-        
-<!-- NAVIGATION HERE -->
-    <nav class="clearfix">
-        <div class="navWrapper">
-            <button onclick="toggleMenu()">&#9776;</button>
-            <ul id="primaryNav" class="hide">
-                <li><a href="#">&#9996; Home</a></li>
-                <li class="active"><a href="#">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-                <li><a href="#"> Fish Haven</a></li>
-                <li><a href="#">&#9742; Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
-               
-            </ul>
-        </div>
-    </nav>
-       
-<!-- CONTENT HERE -->
-    <main>
-        <h1>Preston, Idaho</h1>
-        <article>
-        <section> <h3>Curent Weather</h3></section>
-            <section><h3>10 Day Forecast </h3> </section>
-            <section><h3> Weather News </h3></section>
-            <section><h3> Contact Information </h3></section>
-        </article>
+    /*display forced to show on a small screen */
+    nav ul.hide {display: block;}
 
-    </main>
+    nav ul {margin-left: 2%;}
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border:none;
+        border-right: 1px solid rgba(0,0,0,0.3) ;
+        padding: .6rem 1rem;    
+    }
+
+    .navWrapper {
+        align-content: left;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
     
-<!-- FOOTER HERE -->   
- <footer>
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        margin: 20px;
+        text-shadow: 2px 2px 4px #888;
+        padding: 0px;
+        font-size: 1.8rem ;
+    } 
+   
+    header h3 {
+        font-size: 1.1rem;
+    }
  
-   &copy; Jozzy Meteo du Peuple &bull; <b>Elie Silvere Mambou</b> &bull; <span id="copyrightyear"></span> | South Africa
 
-</footer>
-    
-<script src="js/scripts.js"></script>
-</body>
-</html>
+} /*end large */
