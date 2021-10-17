@@ -1,1 +1,61 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35em){
+    header, nav, main, footer { 
+        max-width: 560px;
+        margin: 0 auto;
+    }
+
+    section.forecast { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    section.forecast div {
+        text-align: center;
+        border: 1px solid #aaa;
+    }
+    section.forecast div h5 {
+        background-color: #eee;
+        margin: 0;
+        padding: 1rem;
+    }
+    
+    .forecast img {
+        width: 10%;
+        margin: 10px auto;
+    }
+    .theparent img { width: 500px; height: auto;}
+    
+    .thechild {
+        border: dashed green 1px;
+        font-size: 1rem;
+        background-color: greenyellow;
+        left: 7px;
+        top: .3px;
+        position: absolute;
+        padding: 0 2%;
+        margin: 60px;
+    }
+    img.photo {
+        float: right;
+        margin: 0 0 1rem 2rem;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-gap: 50px;
+        /*grid-row: auto;*/
+
+    }
+    .phone-email-container {
+        margin-right: 1rem;
+    }
+    
+ 
+} /* end medium */
+
+
+/*----------------------------MAIN------------------------*/
+
+
 
