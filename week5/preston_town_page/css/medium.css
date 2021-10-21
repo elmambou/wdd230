@@ -8,19 +8,22 @@
     section.forecast { 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding: 19px;
     }
     section.forecast div {
         text-align: center;
-        border: 1px solid #aaa;
+        background-color: rgb(22, 231, 238);
+        border: 2px solid #aaa;
+        display: block;
     }
-    section.forecast div h5 {
+    section.forecast div h3 {
         background-color: #eee;
         margin: 0;
         padding: 1rem;
     }
     
     .forecast img {
-        width: 10%;
+        width: 40%;
         margin: 10px auto;
     }
     .theparent img { width: 500px; height: auto;}
@@ -35,9 +38,19 @@
         padding: 0 2%;
         margin: 60px;
     }
-    img.photo {
+    /*img.photo {
         float: right;
         margin: 0 0 1rem 2rem;
+    } */
+
+    .img.photo {
+        display: inline;
+        width: 300px;
+        float: right;
+        padding: 20px;
+        position: static;
+        margin-top: 20px;
+       
     }
 
     .contact {
@@ -56,6 +69,5 @@
 
 
 /*----------------------------MAIN------------------------*/
-
 
 
