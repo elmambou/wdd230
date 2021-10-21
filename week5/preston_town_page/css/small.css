@@ -46,8 +46,8 @@ nav ul.hide {display: none;}
     margin: 0;}
 
     .forecast img {
-        width: 10%;
-        margin: 10px auto;
+        width: 40%;
+        margin: 20px auto;
         }
     
         section.forecast { 
@@ -56,24 +56,27 @@ nav ul.hide {display: none;}
             img.photo {
                 float: right;
                 margin: 0 0 1rem 2rem;
+                border: solid black 2px;
+                
             }
             section.forecast div {
                 text-align: center;
-                border: 1px solid #aaa;}
+                border: 1px solid #aaa; display: none;
+                }
 
 .theparent {
-    border: dashed red 1px;
+    /*border: dashed red 1px; */
     position: relative;
 }
-.theparent img { width: 400px; height: auto;}
+.theparent img { width: 400px; height: auto; border: solid black 1px;}
 
 .thechild {
-    border: dashed green 1px;
+    border: solid black 1px;
     font-size: 1rem;
     background-color: greenyellow;
     left: 7px;
     top: .3px;
-    position: absolute;
+    position: relative;
     padding: 0 2%;
     margin: 60px;
 }
@@ -87,6 +90,15 @@ nav ul.hide {display: none;}
     }
     /* ---------------------MAIN----------------- */
 
+    
+.pancake {
+    background : #114B5F;
+    color : white;
+    text-align : center;
+    padding : 0.2rem;
+}
+
+
     main section    {
         padding: .3rem 2%;
         min-height: .5rem;
@@ -98,9 +110,14 @@ nav ul.hide {display: none;}
     div.showme{display: block}
     div.hideme{display: none}
 
-    article section h3 {
-        background-color: #eee;
-        color: black;}
+  .article {
+      padding: 20px;
+  }
+
+    
+    .contact h2 {
+        margin: 15px;
+    }
     /* -------------------------FOOTER ---------------------*/    
     footer {
        padding: 1rem 2%;
