@@ -53,7 +53,7 @@
     }
 
     .navWrapper {
-        align-content: left;
+        align-content: inherit;
         margin: 0 auto;
         font-size: 1.5rem;
     }
