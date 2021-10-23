@@ -1,5 +1,8 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; width: 100%;}
+.google-map {
+    max-width: 100%;
+}
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -64,6 +67,21 @@ nav ul.hide {display: none;}
                 border: 1px solid #aaa; display: none;
                 }
 
+
+
+                      
+            /*section.article { 
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;}
+                        img.photo {
+                            float: right;
+                            margin: 0 0 1rem 2rem;
+                            border: solid black 2px; */
+                            
+               .flex-container { display: flex; flex-direction: column; flex-flow: column-reverse;
+    }         
+
+
 .theparent {
     /*border: dashed red 1px; */
     position: relative;
@@ -78,8 +96,11 @@ nav ul.hide {display: none;}
     top: .3px;
     position: relative;
     padding: 0 2%;
-    margin: 60px;
+    /*margin: 30 40 10 20px;*/
+    margin: 40px 100px 150px 80px;
+    
 }
+
   h1 {
     line-height: 10px;
     font-weight: 200;
@@ -113,6 +134,7 @@ nav ul.hide {display: none;}
   .article {
       padding: 20px;
   }
+
 
     
     .contact h2 {
