@@ -1,1 +1,211 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; width: 100%;}
+.google-map {
+    max-width: 100%;
+}
 
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html {line-height: 1.30;}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color:yellowgreen;
+}   
+nav {
+    background-color: #aa0000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255,255,2555,0.8);
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+nav ul li.active a{background-color: rgba(0,0,0,0.2); color: #fff;}
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+nav ul.hide {display: none;}
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  img.icon {
+    float: left;
+    width: 90px;
+    margin: 0;}
+
+    .forecast img {
+        width: 40%;
+        margin: 20px auto;
+        }
+    
+        section.forecast { 
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;}
+            img.photo {
+                float: right;
+                margin: 0 0 1rem 2rem;
+                border: solid black 2px;
+                 height:50%;
+                 width: 50%;
+                
+            }
+            section.forecast div {
+                text-align: center;
+                border: 1px solid #aaa; display: none;
+                }
+
+
+
+                      
+            /*section.article { 
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;}
+                        img.photo {
+                            float: right;
+                            margin: 0 0 1rem 2rem;
+                            border: solid black 2px; */
+                            
+               .flex-container { display: flex; flex-direction: column; flex-flow: column-reverse;
+    }         
+
+
+.theparent {
+    /*border: dashed red 1px; */
+    position: relative;
+}
+.theparent img { width: 400px; height: auto; border: solid black 1px;}
+
+/*.thechild {
+    border: solid black green 1px;
+    font-size: 1rem;
+    background-color: greenyellow;
+    left: 7px;
+    top: .3px;
+    position: relative;
+    padding: 0 2%;
+    /*margin: 30 40 10 20px;*/
+   /* margin: 40px 100px 150px 80px;}  */
+
+   .thechild {
+    border: solid black 1px;
+    font-size: 1rem;
+    background-color: greenyellow;
+    left: 7px;
+    top: .3px;
+    position: relative;
+    padding: 0 2%;
+    /*margin: 30 40 10 20px;*/
+    margin: 40px 100px 150px 80px;
+    
+}
+
+.thechild p {
+	padding: 0 2%;
+}
+
+
+  h1 {
+    line-height: 10px;
+    font-weight: 200;
+    padding: 15px 0px 20px 0px; 
+    margin: 10px;
+    color:blue;
+    text-align: center;
+
+    } 
+    /* ---------------------MAIN----------------- */
+
+    
+.pancake {
+    background : #114B5F;
+    color : white;
+    text-align : center;
+    padding : 0.2rem;
+}
+
+
+    main section    {
+        padding: .3rem 2%;
+        min-height: .5rem;
+    }
+
+    main figure.theparent {
+        width: 50%;
+    }
+
+    main figure.theparent {
+        margin: 0 0 0 2%;}
+    
+   /* main figure.golgotha img {width: 100%;}  */  
+
+
+    /*section .forecast img{ display: block;}*/
+
+    div#message {background-color: yellow;}
+    div.showme{display: block}
+    div.hideme{display: none}
+
+  .article {
+      padding: 20px;
+  }
+
+.contact { text-align: center;}
+    
+    .contact  h2 {
+        margin: 15px; text-align: center;
+    }
+
+
+.logo { width: 25%; padding: 1% 1% 0% 1%; }
+
+
+
+    /* -------------------------FOOTER ---------------------*/    
+    footer {
+       padding: 1rem 2%;
+       text-align: center;
+       font-size: 18px;
+       background-color: mediumseagreen;
+       }
+
+
+    h2 {
+        margin: 20px;
+        text-shadow: 2px 2px 4px #888;
+        padding: 0px;
+        text-align: center;
+    } 
+
+
+    h3 {
+        padding: 5px;
+        margin: 10px;
+        font-size: 22px;
+       }
+
+    /* -------------HEADER ---------------*/
+    header {
+        padding: 1rem 2%;
+        min-height: 10rem;
+        
+        
+    }
+
+    h3 {
+        color: green;
+    }
