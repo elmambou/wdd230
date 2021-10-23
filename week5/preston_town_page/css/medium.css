@@ -43,7 +43,7 @@
         margin: 0 0 1rem 2rem;
     } */
 
-    .img.photo {
+   /* .img.photo {
         display: inline;
         width: 300px;
         float: right;
@@ -51,6 +51,27 @@
         position: static;
         margin-top: 20px;
        
+    }  */
+
+    .photo {
+        width: 300px;
+        float: right;
+        padding: 20px;
+        position: static;
+        margin-top: 20px;
+       
+    }
+
+    .flex-container {
+        display: block;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+        /*grid-row: auto; */
+
     }
 
     .contact {
