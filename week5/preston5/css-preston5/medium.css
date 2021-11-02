@@ -37,7 +37,7 @@
 		color: linen;
 	}
 
-	.navigation li .active {
+	.navigation li a.active {
 		background-color: #b89191;
 		color:greenyellow;
 	}
